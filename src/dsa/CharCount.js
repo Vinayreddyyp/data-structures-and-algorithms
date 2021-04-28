@@ -2,7 +2,6 @@ import React from 'react';
 
 const CharCount = () => {
 	const charCount = str => {
-		debugger;
 		let result = {};
 		console.log('result', result);
 		for (var char of str) {
