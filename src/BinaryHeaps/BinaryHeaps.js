@@ -40,6 +40,7 @@ const BinaryHeaps = () => {
 			let idx = 0;
 			let length = this.values.length;
 			let element = this.values[0];
+			debugger;
 			while (true) {
 				let leftChildIndx = 2 * idx + 1;
 				let rightChildIndx = 2 * idx + 2;
@@ -74,7 +75,12 @@ const BinaryHeaps = () => {
 	let heap = new MaxBinaryHeap();
 	debugger;
 	heap.insert(55);
-	heap.dequeue();
+	heap.insert(30);
+	heap.insert(20);
+	heap.insert(10);
+	heap.insert(5);
+
+	heap.sinkDown();
 
 	return (
 		<div>
